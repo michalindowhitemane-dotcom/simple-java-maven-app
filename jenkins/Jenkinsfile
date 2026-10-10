@@ -1,6 +1,7 @@
 pipeline {
-    agent {
-        label '!windows'
+    agent any
+    tools {
+        maven '3.10.0'    
     }
     options {
         skipStagesAfterUnstable()
